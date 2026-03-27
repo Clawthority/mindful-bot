@@ -1,0 +1,15 @@
+{
+  "name": "mindful-bot",
+  "version": "1.0.0",
+  "description": "Screen addiction replacement system. Not a blocker — a better alternative.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node bot.js"
+  },
+  "keywords": ["mental-health", "screen-addiction", "telegram-bot", "wellness", "productivity", "habits"],
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
