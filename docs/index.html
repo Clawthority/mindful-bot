@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindfulBot — Replace scrolling with something better</title>
+  <meta name="description" content="A Telegram bot that helps you reduce screen time by replacing scrolling with micro-challenges and accountability.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1a1a2e; }
+    
+    .hero { background: linear-gradient(135deg, #00b894, #55efc4); color: white; padding: 100px 20px; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem; }
+    
+    .cta { display: inline-block; background: white; color: #00b894; padding: 15px 40px; border-radius: 8px; font-size: 1.2rem; font-weight: bold; text-decoration: none; transition: transform 0.2s; }
+    .cta:hover { transform: scale(1.05); }
+    
+    .section { padding: 80px 20px; max-width: 900px; margin: 0 auto; }
+    .section h2 { font-size: 2rem; margin-bottom: 2rem; text-align: center; }
+    
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .feature { background: #f8f9fa; padding: 30px; border-radius: 12px; }
+    .feature h3 { margin-bottom: 10px; }
+    .feature .emoji { font-size: 2rem; margin-bottom: 10px; }
+    
+    .pricing { text-align: center; }
+    .price-card { display: inline-block; background: white; border: 2px solid #e0e0e0; border-radius: 16px; padding: 40px; margin: 10px; min-width: 280px; }
+    .price-card.featured { border-color: #00b894; transform: scale(1.05); }
+    .price-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+    .price-card .price { font-size: 2.5rem; font-weight: bold; color: #00b894; }
+    .price-card .price span { font-size: 1rem; color: #666; }
+    .price-card ul { list-style: none; margin: 20px 0; text-align: left; }
+    .price-card li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+    .price-card li::before { content: "✅ "; }
+    
+    .buy-btn { display: inline-block; background: #00b894; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+    
+    .social-proof { background: #f8f9fa; padding: 60px 20px; text-align: center; }
+    .social-proof .stat { display: inline-block; margin: 0 30px; }
+    .social-proof .stat .number { font-size: 2.5rem; font-weight: bold; color: #00b894; }
+    .social-proof .stat .label { font-size: 0.9rem; color: #666; }
+    
+    .footer { background: #1a1a2e; color: white; padding: 40px 20px; text-align: center; }
+    .footer a { color: #00b894; }
+    
+    .beta-badge { display: inline-block; background: #ff6b35; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; margin-bottom: 20px; }
+    
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      .price-card { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="beta-badge">🧪 BETA — Free while testing</div>
+    <h1>MindfulBot</h1>
+    <p>Replace scrolling with something better</p>
+    <a href="https://t.me/MindfulBot" class="cta">🤖 Try Free on Telegram</a>
+  </div>
+
+  <div class="section">
+    <h2>The Problem</h2>
+    <p style="text-align: center; font-size: 1.1rem; color: #666;">You spend 3+ hours a day scrolling your phone. You know you should stop. But existing tools just block apps — and you bypass them in 5 minutes. Willpower isn't the solution. A better alternative is.</p>
+  </div>
+
+  <div class="section">
+    <h2>How It Works</h2>
+    <div class="features">
+      
+      <div class="feature">
+        <div class="emoji">🎯</div>
+        <h3>Micro-Challenges</h3>
+        <p>30-120 second activities that give you a dopamine hit without the guilt. Breathing exercises, stretches, gratitude prompts.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🔥</div>
+        <h3>Streak Tracking</h3>
+        <p>Build momentum with daily check-ins. Track your screen time. See your progress. Celebrate wins.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🧠</div>
+        <h3>Behavioral Science</h3>
+        <p>Built on peer-reviewed research. Replace the habit loop, don't just block it. Implementation intentions. Accountability partners.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🌍</div>
+        <h3>Anxiety Tools</h3>
+        <p>5-4-3-2-1 grounding exercise. Box breathing. Quick relief when anxiety hits.</p>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="section pricing">
+    <h2>Pricing</h2>
+    
+      <div class="price-card">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <ul>
+          <li>Daily check-ins</li>
+          <li>Basic challenges</li>
+          <li>Streak tracking</li>
+        </ul>
+        <a href="https://t.me/MindfulBot" class="buy-btn">Start Free</a>
+      </div>
+      <div class="price-card featured">
+        <h3>Premium</h3>
+        <div class="price">$5<span>/month</span></div>
+        <ul>
+          <li>Custom challenges</li>
+          <li>Detailed analytics</li>
+          <li>Accountability matching</li>
+          <li>Weekly reports</li>
+        </ul>
+        <a href="#" class="buy-btn">Coming Soon</a>
+      </div>
+    
+  </div>
+
+  <div class="social-proof">
+    
+      <div class="stat"><div class="number">15</div><div class="label">Micro-Challenges</div></div>
+      <div class="stat"><div class="number">7</div><div class="label">Behavioral Science Principles</div></div>
+      <div class="stat"><div class="number">Free</div><div class="label">While in Beta</div></div>
+    
+  </div>
+
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    
+      <div class="feature"><h3>How is this different from Screen Time?</h3><p>Screen Time blocks apps. We replace the scrolling habit with something better. Same device, different outcome.</p></div>
+      <div class="feature"><h3>Why Telegram?</h3><p>You're already on your phone. Instead of opening Instagram, open Telegram. Better dopamine, zero guilt.</p></div>
+      <div class="feature"><h3>Does it actually work?</h3><p>Built on 7 peer-reviewed behavioral science principles. Not just a tracker — a behavior change system.</p></div>
+    
+  </div>
+
+  <div class="footer">
+    <p>Built with ❤️ by <a href="https://github.com/Clawthority">Clawthority</a></p>
+    <p style="margin-top: 10px; opacity: 0.7;">Same device. Different dopamine. Better life.</p>
+  </div>
+
+</body>
+</html>
