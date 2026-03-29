@@ -55,23 +55,48 @@ function saveUser(user) {
   fs.writeFileSync(path.join(DATA_DIR, `${user.id}.json`), JSON.stringify(user, null, 2));
 }
 
+// --- Challenge Categories ---
+const CHALLENGE_CATEGORIES = {
+  focus: {
+    name: '🎯 Focus',
+    desc: 'Sharpen your attention and get back on track',
+    color: 'blue',
+  },
+  energy: {
+    name: '⚡ Energy',
+    desc: 'Boost your physical and mental energy',
+    color: 'orange',
+  },
+  mood: {
+    name: '🌈 Mood',
+    desc: 'Lift your spirits and find calm',
+    color: 'green',
+  },
+};
+
 // --- Challenges (Variable Rewards) ---
 const CHALLENGES = [
-  { id: 'breathing', name: '🌬️ Box Breathing', desc: 'Breathe in 4s, hold 4s, out 4s, hold 4s. 3 rounds.', points: 10, duration: '60s' },
-  { id: 'gratitude', name: '🙏 Gratitude 3', desc: 'Name 3 things you\'re grateful for right now.', points: 10, duration: '30s' },
-  { id: 'stretch', name: '🧘 Micro Stretch', desc: 'Stretch your neck, shoulders, and wrists for 30 seconds.', points: 10, duration: '30s' },
-  { id: 'water', name: '💧 Drink Water', desc: 'Go get a glass of water and drink it mindfully.', points: 10, duration: '60s' },
-  { id: 'look', name: '👀 20-20-20', desc: 'Look at something 20 feet away for 20 seconds.', points: 10, duration: '20s' },
-  { id: 'walk', name: '🚶 Mini Walk', desc: 'Walk to another room and back. Notice 3 things.', points: 15, duration: '120s' },
-  { id: 'journal', name: '📝 Brain Dump', desc: 'Write down everything on your mind. Don\'t filter.', points: 15, duration: '120s' },
-  { id: 'cold', name: '🥶 Cold Water', desc: 'Splash cold water on your face or wrists.', points: 10, duration: '30s' },
-  { id: 'grounding', name: '🌍 5-4-3-2-1', desc: 'Name: 5 things you see, 4 you hear, 3 you feel, 2 you smell, 1 you taste.', points: 15, duration: '120s' },
-  { id: 'pushup', name: '💪 10 Push-ups', desc: 'Do 10 push-ups (or wall push-ups). Any variation counts.', points: 20, duration: '60s' },
-  { id: 'compliment', name: '💬 Text Someone', desc: 'Send a genuine compliment to someone you care about.', points: 15, duration: '60s' },
-  { id: 'draw', name: '🎨 Doodle 60s', desc: 'Draw anything for 60 seconds. Quality doesn\'t matter.', points: 15, duration: '60s' },
-  { id: 'music', name: '🎵 Song Break', desc: 'Listen to one full song with your eyes closed.', points: 15, duration: '180s' },
-  { id: 'clean', name: '🧹 Tidy Up', desc: 'Clean or organize one small area around you.', points: 15, duration: '120s' },
-  { id: 'photo', name: '📸 Capture Beauty', desc: 'Take a photo of something beautiful near you.', points: 10, duration: '60s' },
+  // Focus category
+  { id: 'breathing', name: '🌬️ Box Breathing', desc: 'Breathe in 4s, hold 4s, out 4s, hold 4s. 3 rounds.', points: 10, duration: '60s', category: 'focus' },
+  { id: 'look', name: '👀 20-20-20', desc: 'Look at something 20 feet away for 20 seconds.', points: 10, duration: '20s', category: 'focus' },
+  { id: 'grounding', name: '🌍 5-4-3-2-1', desc: 'Name: 5 things you see, 4 you hear, 3 you feel, 2 you smell, 1 you taste.', points: 15, duration: '120s', category: 'focus' },
+  { id: 'journal', name: '📝 Brain Dump', desc: 'Write down everything on your mind. Don\'t filter.', points: 15, duration: '120s', category: 'focus' },
+  { id: 'draw', name: '🎨 Doodle 60s', desc: 'Draw anything for 60 seconds. Quality doesn\'t matter.', points: 15, duration: '60s', category: 'focus' },
+  { id: 'prioritize', name: '📋 Pick 3', desc: 'Write down 3 things you actually need to do today. Circle the most important one.', points: 15, duration: '60s', category: 'focus' },
+
+  // Energy category
+  { id: 'stretch', name: '🧘 Micro Stretch', desc: 'Stretch your neck, shoulders, and wrists for 30 seconds.', points: 10, duration: '30s', category: 'energy' },
+  { id: 'walk', name: '🚶 Mini Walk', desc: 'Walk to another room and back. Notice 3 things.', points: 15, duration: '120s', category: 'energy' },
+  { id: 'cold', name: '🥶 Cold Water', desc: 'Splash cold water on your face or wrists.', points: 10, duration: '30s', category: 'energy' },
+  { id: 'pushup', name: '💪 10 Push-ups', desc: 'Do 10 push-ups (or wall push-ups). Any variation counts.', points: 20, duration: '60s', category: 'energy' },
+  { id: 'water', name: '💧 Drink Water', desc: 'Go get a glass of water and drink it mindfully.', points: 10, duration: '60s', category: 'energy' },
+
+  // Mood category
+  { id: 'gratitude', name: '🙏 Gratitude 3', desc: 'Name 3 things you\'re grateful for right now.', points: 10, duration: '30s', category: 'mood' },
+  { id: 'compliment', name: '💬 Text Someone', desc: 'Send a genuine compliment to someone you care about.', points: 15, duration: '60s', category: 'mood' },
+  { id: 'music', name: '🎵 Song Break', desc: 'Listen to one full song with your eyes closed.', points: 15, duration: '180s', category: 'mood' },
+  { id: 'clean', name: '🧹 Tidy Up', desc: 'Clean or organize one small area around you.', points: 15, duration: '120s', category: 'mood' },
+  { id: 'photo', name: '📸 Capture Beauty', desc: 'Take a photo of something beautiful near you.', points: 10, duration: '60s', category: 'mood' },
 ];
 
 // --- Achievements ---
@@ -271,13 +296,30 @@ bot.on('message', (msg) => {
   bot.sendMessage(msg.chat.id, response, { parse_mode: 'Markdown' });
 });
 
-// Challenge
+// Categories — browse challenges by category
+bot.onText(/\/categories/, (msg) => {
+  const buttons = Object.entries(CHALLENGE_CATEGORIES).map(([key, cat]) => {
+    const count = CHALLENGES.filter(c => c.category === key).length;
+    return [{ text: `${cat.name} (${count})`, callback_data: `cat_${key}` }];
+  });
+
+  bot.sendMessage(msg.chat.id,
+    `📂 *Challenge Categories*\n\nPick a category to focus on:`,
+    {
+      parse_mode: 'Markdown',
+      reply_markup: { inline_keyboard: buttons }
+    }
+  );
+});
+
+// Challenge (random from all categories)
 bot.onText(/\/challenge/, (msg) => {
   const user = getUser(msg.from.id);
   const challenge = CHALLENGES[Math.floor(Math.random() * CHALLENGES.length)];
+  const cat = CHALLENGE_CATEGORIES[challenge.category];
 
   bot.sendMessage(msg.chat.id,
-    `🎯 *Challenge: ${challenge.name}*\n\n` +
+    `${cat ? cat.name : '🎯'} *Challenge: ${challenge.name}*\n\n` +
     `${challenge.desc}\n\n` +
     `⏱️ Takes: ${challenge.duration}\n` +
     `⭐ Reward: ${challenge.points} points\n\n` +
@@ -288,6 +330,8 @@ bot.onText(/\/challenge/, (msg) => {
         inline_keyboard: [[
           { text: '✅ Done!', callback_data: `done_${challenge.id}_${challenge.points}` },
           { text: '🔄 Different challenge', callback_data: 'new_challenge' }
+        ], [
+          { text: '📂 Browse categories', callback_data: 'back_categories' }
         ]]
       }
     }
