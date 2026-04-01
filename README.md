@@ -61,6 +61,14 @@ npm start
 4. Copy the token
 5. Set it as `MINDFUL_BOT_TOKEN` env var
 
+## Who It's For
+
+- **Heavy scrollers** — You pick up your phone 80+ times a day. MindfulBot gives you something better to do with each unlock.
+- **Students** — Replace procrastination habits with micro-challenges that actually stick.
+- **Parents** — Model healthy screen habits. Show your kids you're working on it too.
+- **Remote workers** — Break the "just checking" cycle that fragments your focus.
+- **Anyone in therapy/CBT** — Works alongside treatment as a daily reinforcement tool.
+
 ## Commands
 
 | Command | What it does |
