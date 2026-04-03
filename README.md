@@ -35,6 +35,9 @@ Built on peer-reviewed research:
 - 🌍 **Grounding exercise** — 5-4-3-2-1 for anxiety/panic
 - 🧠 **Implementation intentions** — Research-backed "if-then" plans
 - 📉 **Trend analysis** — 7-day averages, day-over-day changes
+- 👨‍👩‍👧 **Family protection** — Guardian dashboard to track loved ones' progress (Premium)
+- 🎨 **Custom challenges** — Create your own micro-challenges
+- 🤝 **Accountability partner matching** — Get matched with a partner to stay accountable
 
 ## Quick Start
 
@@ -85,19 +88,34 @@ npm start
 
 | Principle | Source | Implementation |
 |-----------|--------|----------------|
-| Replace routine | Duhigg | Bot interaction replaces scrolling |
-| Variable rewards | Schüll | Random challenges, surprise encouragement |
-| Accountability | ASTD research | Daily check-ins, streak tracking |
-| Autonomy | Deci & Ryan | User chooses to engage |
-| Habit stacking | James Clear | Check-in after existing habit |
-| Implementation intentions | Gollwitzer | /intention command |
-| Traction > Focus | Nir Eyal | Micro-challenges as alternative |
-| Friction theory | BJ Fogg | Bot on Telegram (already on phone) |
+| Replace routine | Duhigg (2012) | Bot interaction replaces scrolling |
+| Variable rewards | Schüll (2012) | Random challenges, surprise encouragement |
+| Accountability | ASTD research (2014) | Daily check-ins, streak tracking |
+| Autonomy | Deci & Ryan (2000) | User chooses to engage |
+| Habit stacking | Clear (2018) | Check-in after existing habit |
+| Implementation intentions | Gollwitzer (1999) | /intention command |
+| Traction > Focus | Eyal (2014) | Micro-challenges as alternative |
+| Friction theory | Fogg (2009) | Bot on Telegram (already on phone) |
+
+### Research References
+
+- **Hooked: How to Build Habit-Forming Products** — Nir Eyal (2014)
+- **The Power of Habit** — Charles Duhigg (2012)
+- **Addiction by Design** — Natasha Schüll (2012)
+- **Self-Determination Theory** — Deci & Ryan (2000)
+- **Atomic Habits** — James Clear (2018)
+- **The Psychology of Goals** — Gollwitzer (1999)
+- **Behavior Model** — BJ Fogg (2009)
 
 ## Monetization
 
 - **Free:** Daily check-in, basic challenges, streak tracking
 - **Premium ($5/month):** Custom challenges, detailed analytics, accountability partner matching, priority support
+
+## Related Products
+
+- **[Scam Academy](../scam-academy)** — Learn to spot scams with interactive simulations
+- **[Scam Shield](../scam-shield)** — Check suspicious messages, links, and crypto addresses
 
 ## License
 
