@@ -97,6 +97,22 @@ const CHALLENGES = [
   { id: 'music', name: '🎵 Song Break', desc: 'Listen to one full song with your eyes closed.', points: 15, duration: '180s', category: 'mood' },
   { id: 'clean', name: '🧹 Tidy Up', desc: 'Clean or organize one small area around you.', points: 15, duration: '120s', category: 'mood' },
   { id: 'photo', name: '📸 Capture Beauty', desc: 'Take a photo of something beautiful near you.', points: 10, duration: '60s', category: 'mood' },
+
+  // === NEW CHALLENGES ===
+  // Focus category
+  { id: 'timer', name: '⏱️ 5-Minute Timer', desc: 'Set a timer for 5 minutes and work on ONE task without switching.', points: 20, duration: '300s', category: 'focus' },
+  { id: 'single_task', name: '🎯 Single Task', desc: 'Choose ONE thing to do. Do it for 2 minutes straight. No phone.', points: 15, duration: '120s', category: 'focus' },
+  { id: 'no_phone', name: '📵 3-Minute No-Phone', desc: 'Put your phone face down. Don\'t touch it for 3 minutes.', points: 10, duration: '180s', category: 'focus' },
+
+  // Energy category
+  { id: 'posture', name: '🧍 Posture Check', desc: 'Sit or stand with perfect posture for 60 seconds. Shoulders back, chin up.', points: 10, duration: '60s', category: 'energy' },
+  { id: 'power_pose', name: '💪 Power Pose', desc: 'Stand in a power pose (hands on hips or arms up) for 30 seconds.', points: 10, duration: '30s', category: 'energy' },
+  { id: 'snack', name: '🍎 Mindful Snack', desc: 'Eat something slowly. Notice the texture, taste, smell. No phone.', points: 15, duration: '120s', category: 'energy' },
+
+  // Mood category
+  { id: 'affirmation', name: '✨ Self-Affirmation', desc: 'Say 3 positive things about yourself out loud.', points: 10, duration: '30s', category: 'mood' },
+  { id: '回忆', name: '😊 Memory Lane', desc: 'Think of a happy memory. Picture it in detail for 60 seconds.', points: 15, duration: '60s', category: 'mood' },
+  { id: 'kindness', name: '💛 Kindness Deed', desc: 'Do one small kind act for yourself — make your bed, drink tea, etc.', points: 15, duration: '120s', category: 'mood' },
 ];
 
 // --- Achievements ---
