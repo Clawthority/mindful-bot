@@ -1,5 +1,9 @@
 # 🧠 MindfulBot
 
+[![MindfulBot](https://img.shields.io/badge/Telegram-Build-Live-brightgreen)](https://t.me)
+[![Version](https://img.shields.io/badge/version-1.0-blue)](./package.json)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+
 **Not a blocker. Not a nag. A better alternative.**
 
 A Telegram bot that helps people reduce screen time by replacing scrolling with micro-challenges, streak tracking, and accountability — all backed by behavioral science.
@@ -38,6 +42,17 @@ Built on peer-reviewed research:
 - 👨‍👩‍👧 **Family protection** — Guardian dashboard to track loved ones' progress (Premium)
 - 🎨 **Custom challenges** — Create your own micro-challenges
 - 🤝 **Accountability partner matching** — Get matched with a partner to stay accountable
+
+## How It Works
+
+```
+1. Start — Add MindfulBot to Telegram, set your daily screen time goal
+2. Check-in — Log your screen time each day (or let it auto-detect)
+3. Get challenged — Each unlock triggers a 30-120s micro-challenges instead
+4. Build streaks — Complete challenges to maintain streaks and earn points
+5. Level up — Points unlock achievements and badges over time
+6. Stay accountable — Optionally match with an accountability partner
+```
 
 ## Quick Start
 
@@ -111,6 +126,18 @@ npm start
 
 - **Free:** Daily check-in, basic challenges, streak tracking
 - **Premium ($5/month):** Custom challenges, detailed analytics, accountability partner matching, priority support
+
+## Roadmap
+
+The full feature roadmap is in [ROADMAP.md](./ROADMAP.md).
+
+### What's Coming
+
+| Version | Focus | Target |
+|---------|-------|--------|
+| v1.1 | Engagement | Challenge variety expansion (50+), weekly reports, custom challenges |
+| v1.2 | Science | Personalized timing, motivational interviewing, screen time API integrations |
+| v2.0 | Community | Group challenges, leaderboards, therapist dashboard |
 
 ## Related Products
 
