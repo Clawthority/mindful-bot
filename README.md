@@ -1,6 +1,6 @@
 # 🧠 MindfulBot
 
-[![MindfulBot](https://img.shields.io/badge/Telegram-Build-Live-brightgreen)](https://t.me)
+[![MindfulBot](https://img.shields.io/badge/Telegram-Build-Live-brightgreen)](https://t.me/MindfulBotApp)
 [![Version](https://img.shields.io/badge/version-1.0-blue)](./package.json)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
