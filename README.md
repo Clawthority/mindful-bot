@@ -143,6 +143,7 @@ The full feature roadmap is in [ROADMAP.md](./ROADMAP.md).
 
 - **[Scam Academy](../scam-academy)** — Learn to spot scams with interactive simulations
 - **[Scam Shield](../scam-shield)** — Check suspicious messages, links, and crypto addresses
+- **[Influencer Match](../influencer-match)** — Match with high-commission affiliate offers
 
 ## License
 
